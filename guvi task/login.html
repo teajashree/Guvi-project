@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+<?php require "reg.php"; ?>
+<img src="C:\Users\Teaja\OneDrive\Desktop\guvi task\assets\logo.png" alt="Header Image" style="width:20%">
+<img src="C:\Users\Teaja\OneDrive\Desktop\guvi task\assets\lo.gif" alt="Header Image" style="width:15%">
+<img src="C:\Users\Teaja\OneDrive\Desktop\guvi task\assets\guvi_place.png" alt="Header Image" style="width:100%">
+	<div class="login-box">
+		<h1>LOG IN</h1>
+		<form onsubmit="goToNextPage()">
+                 <form method="POST" action=" reg.php">
+			<div class="user-box">
+				<input type="text" name="username" >
+				<label>Username</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="password" >
+				<label>Password</label>
+			</div>
+			<a href="#">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				
+                <button type="submit" class="registerbtn"><a href="profile.html">Log in</a></button>
+                <button type="submit" class="registerbtn"><a href="reg.html"> Create an account</a></button>
+                        
+                        
+			</a>
+		</form>
+	</div>
+	<script src="login.js"></script>
+<script>
+function registerUser() {
+      alert("login");
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+<body>
+<?php
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+{
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    registerUser($username, $password);
+    
+  }
+  ?>
+<img src="C:\Users\Teaja\OneDrive\Desktop\guvi task\assets\fe.png" alt="Header Image" style="width:100%">
+<img src="C:\Users\Teaja\OneDrive\Desktop\guvi task\assets\logo.png" alt="Header Image" style="width:20%">
+<img src="C:\Users\Teaja\OneDrive\Desktop\guvi task\assets\giphy.gif" alt="Header Image" style="width:15%">
+<h1>Welcome to Grab Ur Vernacular Imprints</h1>
+	<div class="container">
+		<form>
+                <form method="POST" action=" login.php">
+			<h1>SIGN UP </h1>
+			<label for="name">Name:</label>
+			<input type="text" placeholder="Enter your name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" placeholder="Enter your email" name="email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" placeholder="Enter your password" name="password" required>
+
+			<label for="password2">Confirm Password:</label>
+			<input type="password" placeholder="Confirm your password" name="password2" required>
+                
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                                  
+
+			<button type="submit" class="registerbtn"><a href="profile.html">Register</a></button>
+                <button type="submit" class="registerbtn"><a href="login.html"> Already have an account? Log in</a></button>
+		</form>
+	</div>
+	<script src="reg.js"></script>
+<script>
+function registerUser()
+{
+alert("registration:);
+}
+</body>
+</html>
+

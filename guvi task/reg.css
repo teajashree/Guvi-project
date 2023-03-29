@@ -1,0 +1,68 @@
+body 
+{
+	font-family: Arial, Helvetica, serif;
+}
+
+.container 
+{
+	padding: 50px;
+	background-color: #f2f2f2;
+}
+
+input[type=text], input[type=email], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+label {
+  font-size: 20px; 
+}
+
+
+button[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button[type=submit]:hover {
+	opacity: 0.8;
+}
+input[type="date"] {
+  width: 250px; 
+  height: 40px; 
+  font-size: 20px; 
+}
+
+
+.registerbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.registerbtn:hover {
+	opacity: 1;
+}
+
+h1 {
+	text-align: center;
+font-family: fantasy;
+}
+form {
+  border: 8px solid #ccc;
+  padding: 150px;
+}
+

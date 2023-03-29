@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<?php
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $bio = $_POST['bio'];
+    createUserProfile($username, $name, $email, $bio);
+    
+  }
+  ?>
+    <div class="profile">
+        <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__480.png" alt="" class="photo">
+        <span class="Name">Teaja</span>
+        <span class="Mail">tj@gmail.com</span>
+        <span class="details">Building next-gen through our e-learning platform</span>
+        <div class="buttons">
+            
+        </div>
+        <div class="credit">Made with <span style="color:tomato">❤</span> by <a  href="https://www.learningrobo.com/">Guvi</a></div>
+    </div>
+<script>
+function UserProfile()
+{
+alert("User profile");
+}
+</script>
+
+  </body>
+</html>

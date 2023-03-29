@@ -1,0 +1,14 @@
+use guvi
+db.createCollection("task")
+db.accounts.insert({
+    "username": "example_user",
+    "email": "user@example.com",
+    "password": "password123"
+})
+db.createCollection("profiles")
+db.profiles.insert({
+    "username": "example_user",
+    "name": "John Doe",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "profile_picture": "https://example.com/profile.jpg"
+})
